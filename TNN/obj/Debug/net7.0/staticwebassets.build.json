@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "mD2nWvD6npE6KsaFdraIusUGBrrRDJqkQs4le+hLT2I=",
+  "Source": "TNN",
+  "BasePath": "_content/TNN",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TNN\\wwwroot",
+      "Source": "TNN",
+      "ContentRoot": "D:\\WorkSpace\\Vs\\BACK-END CUOI KI\\TNN\\TNN\\wwwroot\\",
+      "BasePath": "_content/TNN",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\WorkSpace\\Vs\\BACK-END CUOI KI\\TNN\\TNN\\wwwroot\\Users\\ab193614-6cb2-486f-8d14-5e79de37c96b_1.png",
+      "SourceId": "TNN",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WorkSpace\\Vs\\BACK-END CUOI KI\\TNN\\TNN\\wwwroot\\",
+      "BasePath": "_content/TNN",
+      "RelativePath": "Users/ab193614-6cb2-486f-8d14-5e79de37c96b_1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Users\\ab193614-6cb2-486f-8d14-5e79de37c96b_1.png"
+    },
+    {
+      "Identity": "D:\\WorkSpace\\Vs\\BACK-END CUOI KI\\TNN\\TNN\\wwwroot\\Users\\d838318b-c578-46f4-9d8c-c518b012b8f3_Screenshot 2024-03-19 084804.png",
+      "SourceId": "TNN",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WorkSpace\\Vs\\BACK-END CUOI KI\\TNN\\TNN\\wwwroot\\",
+      "BasePath": "_content/TNN",
+      "RelativePath": "Users/d838318b-c578-46f4-9d8c-c518b012b8f3_Screenshot 2024-03-19 084804.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Users\\d838318b-c578-46f4-9d8c-c518b012b8f3_Screenshot 2024-03-19 084804.png"
+    },
+    {
+      "Identity": "D:\\WorkSpace\\Vs\\BACK-END CUOI KI\\TNN\\TNN\\wwwroot\\Users\\fdf6c8cf-ac40-4c7a-adb2-7ed736172a95_1.png",
+      "SourceId": "TNN",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WorkSpace\\Vs\\BACK-END CUOI KI\\TNN\\TNN\\wwwroot\\",
+      "BasePath": "_content/TNN",
+      "RelativePath": "Users/fdf6c8cf-ac40-4c7a-adb2-7ed736172a95_1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Users\\fdf6c8cf-ac40-4c7a-adb2-7ed736172a95_1.png"
+    }
+  ]
+}

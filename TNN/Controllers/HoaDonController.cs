@@ -36,20 +36,20 @@ namespace TNN.Controllers
             var CTHD = _hoaDonRepo.AddHoaDon(add);
             return Ok(CTHD);
         }
-        [Authorize(Roles = "admin,Nhan Vien")] // có quyền 
-        [HttpDelete("DeleteHoaDon")]
-        public IActionResult DeleteHoaDon(int idHoadon, int idUser)
-        {
-            var CTDH = _hoaDonRepo.DeleteHoaDon(idHoadon, idUser);
-            return Ok(CTDH);
-        }
-        [Authorize(Roles = "admin,Nhan Vien")] // có quyền 
-        [HttpPut("EditHD")]
-        public IActionResult EditCTDH(Edit edit)
-        {
-            var CTHD = _hoaDonRepo.EditHoaDon(edit);
-            return Ok(CTHD);
-        }
+        //[Authorize(Roles = "admin,Nhan Vien")] // có quyền 
+        //[HttpDelete("DeleteHoaDon")]
+        //public IActionResult DeleteHoaDon(int idHoadon, int idUser)
+        //{
+        //    var CTDH = _hoaDonRepo.DeleteHoaDon(idHoadon, idUser);
+        //    return Ok(CTDH);
+        //}
+        //[Authorize(Roles = "admin,Nhan Vien")] // có quyền 
+        //[HttpPut("EditHD")]
+        //public IActionResult EditCTDH(Edit edit)
+        //{
+        //    var CTHD = _hoaDonRepo.EditHoaDon(edit);
+        //    return Ok(CTHD);
+        //}
 
     }
 }

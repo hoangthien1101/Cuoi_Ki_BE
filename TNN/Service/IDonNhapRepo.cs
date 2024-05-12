@@ -8,8 +8,8 @@ namespace TNN.Service
     {
         JsonResult AddDonNhap(AddDonNhap addDonNhap);
         List<DonNhapMD> GetAll();
-        JsonResult EditDonNhap(int iddonnhap, EditDonNhap edit);
-        JsonResult DeleteDonNhap(int idDonNhap);
+        //JsonResult EditDonNhap(int iddonnhap, EditDonNhap edit);
+        //JsonResult DeleteDonNhap(int idDonNhap);
         DonNhapVM GetById(int iddonnhap);
     }
     public class DonNhapRepo : IDonNhapRepo
@@ -66,55 +66,55 @@ namespace TNN.Service
             return DonNhaps;
         }
 
-        public JsonResult EditDonNhap(int iddonnhap, EditDonNhap edit)
-        {
-            var DonNhaps = _context.DonNhaps.SingleOrDefault(l => l.IddonNhap == iddonnhap);
-            if (DonNhaps == null)
-            {
+        //public JsonResult EditDonNhap(int iddonnhap, EditDonNhap edit)
+        //{
+        //    var DonNhaps = _context.DonNhaps.SingleOrDefault(l => l.IddonNhap == iddonnhap);
+        //    if (DonNhaps == null)
+        //    {
 
-                return new JsonResult("Khong tim thay id can chinh sua ")
-                {
-                    StatusCode = StatusCodes.Status404NotFound
-                };
-            }
-            else
-            {
-                DonNhaps.IdnhaCungCap = edit.IdnhaCungCap;
-                DonNhaps.NgayNhap = DateTime.Now;
-                DonNhaps.TongTien = edit.TongTien;
-                DonNhaps.Iduser = edit.Iduser;
-                _context.SaveChanges();
-                return new JsonResult(" Đã chinh sua ")
-                {
-                    StatusCode = StatusCodes.Status200OK
-                };
-            }
+        //        return new JsonResult("Khong tim thay id can chinh sua ")
+        //        {
+        //            StatusCode = StatusCodes.Status404NotFound
+        //        };
+        //    }
+        //    else
+        //    {
+        //        DonNhaps.IdnhaCungCap = edit.IdnhaCungCap;
+        //        DonNhaps.NgayNhap = DateTime.Now;
+        //        DonNhaps.TongTien = edit.TongTien;
+        //        DonNhaps.Iduser = edit.Iduser;
+        //        _context.SaveChanges();
+        //        return new JsonResult(" Đã chinh sua ")
+        //        {
+        //            StatusCode = StatusCodes.Status200OK
+        //        };
+        //    }
             
-        }
+        //}
 
-        public JsonResult DeleteDonNhap(int idDonNhap)
-        {
-            var DonNhaps = _context.DonNhaps.SingleOrDefault(l => l.IddonNhap == idDonNhap);
-            if (DonNhaps == null)
-            {
-                return new JsonResult("Không có ID đơn nhập  để xóa ")
-                {
-                    StatusCode = StatusCodes.Status404NotFound
+        //public JsonResult DeleteDonNhap(int idDonNhap)
+        //{
+        //    var DonNhaps = _context.DonNhaps.SingleOrDefault(l => l.IddonNhap == idDonNhap);
+        //    if (DonNhaps == null)
+        //    {
+        //        return new JsonResult("Không có ID đơn nhập  để xóa ")
+        //        {
+        //            StatusCode = StatusCodes.Status404NotFound
 
-                };
-            }
-            else
-            {
-                _context.DonNhaps.Remove(DonNhaps);
-                _context.SaveChanges();
+        //        };
+        //    }
+        //    else
+        //    {
+        //        _context.DonNhaps.Remove(DonNhaps);
+        //        _context.SaveChanges();
 
-                return new JsonResult("Đã xóa")
-                {
-                    StatusCode = StatusCodes.Status200OK
-                };
-            };
+        //        return new JsonResult("Đã xóa")
+        //        {
+        //            StatusCode = StatusCodes.Status200OK
+        //        };
+        //    };
 
-        }
+        //}
 
         public DonNhapVM GetById(int iddonnhap)
         {

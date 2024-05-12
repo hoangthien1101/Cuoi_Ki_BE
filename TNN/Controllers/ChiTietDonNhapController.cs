@@ -39,20 +39,20 @@ namespace TNN.Controllers
             var ChiTietDonNhaps = _ChiTietDonNhapRepo.AddChiTietDonNhap(Add);
             return Ok(ChiTietDonNhaps);
         }
-        [Authorize(Roles = "admin,Nhan Vien")] // có quyền 
-        [HttpPut("Edit")]
-        public IActionResult EditChiTietDonNhap( int IdChitietdonnhap,editChiTietDonNhap edit)
-        {
+        //[Authorize(Roles = "admin,Nhan Vien")] // có quyền 
+        //[HttpPut("Edit")]
+        //public IActionResult EditChiTietDonNhap( int IdChitietdonnhap,editChiTietDonNhap edit)
+        //{
 
-            return Ok(_ChiTietDonNhapRepo.EditChiTietDonNhap(IdChitietdonnhap,edit));
+        //    return Ok(_ChiTietDonNhapRepo.EditChiTietDonNhap(IdChitietdonnhap,edit));
 
-        }
-        [Authorize(Roles = "admin,Nhan Vien")] // có quyền 
-        [HttpDelete("Delete")]
-        public IActionResult DeleteChiTietDonNhap(int IdChitietdonnhap)
-        {
-            return Ok(_ChiTietDonNhapRepo.DeleteChiTietDonNhap(IdChitietdonnhap));
-        }
+        //}
+        //[Authorize(Roles = "admin,Nhan Vien")] // có quyền 
+        //[HttpDelete("Delete")]
+        //public IActionResult DeleteChiTietDonNhap(int IdChitietdonnhap)
+        //{
+        //    return Ok(_ChiTietDonNhapRepo.DeleteChiTietDonNhap(IdChitietdonnhap));
+        //}
     }
 
 }

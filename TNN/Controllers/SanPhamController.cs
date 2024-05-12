@@ -16,7 +16,7 @@ namespace TNN.Controllers
         {
             _sanPhamRepo = sanPhamRepo;
         }
-        [Authorize(Roles = "admin,Nhan Vien")] // có quyền 
+        [Authorize(Roles = "admin,NV")] // có quyền 
         [HttpGet("GetAll")]
         public IActionResult GetAll()
         {
@@ -34,7 +34,7 @@ namespace TNN.Controllers
 
         }
 
-        [Authorize(Roles = "admin,Nhan Vien")] // có quyền 
+        [Authorize(Roles = "admin,NV")] // có quyền 
         [HttpPost("addSP")]
 
         public IActionResult AddSanPham(AddSP add)
@@ -42,13 +42,13 @@ namespace TNN.Controllers
             return Ok(_sanPhamRepo.AddSanPham(add));
         }
 
-        [Authorize(Roles = "admin,Nhan Vien")] // có quyền 
+        [Authorize(Roles = "admin,NV")] // có quyền 
         [HttpDelete("DeleteByID")]
         public IActionResult Delete(int IdSanPham)
         {
             return Ok(_sanPhamRepo.DeleteByID(IdSanPham));
         }
-        [Authorize(Roles = "admin,Nhan Vien")] // có quyền 
+        [Authorize(Roles = "admin,NV")] // có quyền 
         [HttpPut("EditSanPham")]
         public IActionResult EditSanPham(int idsanpham, EditSanPham edit)
         {

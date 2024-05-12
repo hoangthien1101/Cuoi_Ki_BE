@@ -39,16 +39,16 @@ namespace TNN.ViewModel
 
     }
 
-    public class EditDonNhap
-    {
-        public int? IdnhaCungCap { get; set; }
+    //public class EditDonNhap
+    //{
+    //    public int? IdnhaCungCap { get; set; }
 
-        public DateTime? NgayNhap { get; set; }
+    //    public DateTime? NgayNhap { get; set; }
 
-        public double? TongTien { get; set; }
+    //    public double? TongTien { get; set; }
 
-        public int? Iduser { get; set; }
+    //    public int? Iduser { get; set; }
 
-    }
+    //}
 }
 

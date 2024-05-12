@@ -43,8 +43,4 @@ namespace TNN.ViewModel
 
     }
 
-
-
-
-
 }

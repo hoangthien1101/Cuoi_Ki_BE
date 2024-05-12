@@ -10,8 +10,8 @@ namespace TNN.Service
         List<HoaDonMD> GetAll();
         HoaDonMD GetByID(int IddonHang, int iduser);
         JsonResult AddHoaDon(AddHoaDon add);
-        JsonResult DeleteHoaDon(int iddonhag, int iduser);
-        JsonResult EditHoaDon(Edit edit);
+        //JsonResult DeleteHoaDon(int iddonhag, int iduser);
+        //JsonResult EditHoaDon(Edit edit);
     }
     public class HoaDonRepo : IHoaDonRepo
     {
@@ -89,53 +89,53 @@ namespace TNN.Service
             }
         }
 
-        public JsonResult DeleteHoaDon(int iddonhag, int iduser)
-        {
-            var check = _context.HoaDons.SingleOrDefault(l => l.IddonHang == iddonhag && l.Iduser == iduser);
-            if (check == null)
-            {
-                return new JsonResult("Không có tài khoản cần xóa")
-                {
-                    StatusCode = StatusCodes.Status404NotFound
-                };
-            }
-            else
-            {
-                _context.HoaDons.Remove(check);
-                _context.SaveChanges();
+        //public JsonResult DeleteHoaDon(int iddonhag, int iduser)
+        //{
+        //    var check = _context.HoaDons.SingleOrDefault(l => l.IddonHang == iddonhag && l.Iduser == iduser);
+        //    if (check == null)
+        //    {
+        //        return new JsonResult("Không có tài khoản cần xóa")
+        //        {
+        //            StatusCode = StatusCodes.Status404NotFound
+        //        };
+        //    }
+        //    else
+        //    {
+        //        _context.HoaDons.Remove(check);
+        //        _context.SaveChanges();
 
-                return new JsonResult("Đã xóa")
-                {
-                    StatusCode = StatusCodes.Status200OK
-                };
-            }
+        //        return new JsonResult("Đã xóa")
+        //        {
+        //            StatusCode = StatusCodes.Status200OK
+        //        };
+        //    }
 
-        }
+        //}
 
-        public JsonResult EditHoaDon(Edit edit)
-        {
-            var check = _context.HoaDons.FirstOrDefault(a => a.Iduser == edit.Iduser && a.MaDonHang == edit.MaDonHang);
-            if (check == null)
-            {
-                return new JsonResult("Không tìm thấy")
-                {
-                    StatusCode = StatusCodes.Status404NotFound
-                };
-            }
-            else
-            {
-                check.NgayDatHang = edit.NgayDatHang;
-                check.TongTien = edit.TongTien;
+        //public JsonResult EditHoaDon(Edit edit)
+        //{
+        //    var check = _context.HoaDons.FirstOrDefault(a => a.Iduser == edit.Iduser && a.MaDonHang == edit.MaDonHang);
+        //    if (check == null)
+        //    {
+        //        return new JsonResult("Không tìm thấy")
+        //        {
+        //            StatusCode = StatusCodes.Status404NotFound
+        //        };
+        //    }
+        //    else
+        //    {
+        //        check.NgayDatHang = edit.NgayDatHang;
+        //        check.TongTien = edit.TongTien;
 
-                _context.SaveChanges();
-                return new JsonResult("Sửa Thành công ")
-                {
-                    StatusCode = StatusCodes.Status200OK
-                };
+        //        _context.SaveChanges();
+        //        return new JsonResult("Sửa Thành công ")
+        //        {
+        //            StatusCode = StatusCodes.Status200OK
+        //        };
 
-            }
+        //    }
 
-        }
+        //}
 
 
     }

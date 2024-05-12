@@ -35,14 +35,14 @@ namespace TNN.ViewModel
 
     }
 
-    public class Edit
-    {
-        public string? MaDonHang { get; set; }
-        public int Iduser { get; set; }
+    //public class Edit
+    //{
+    //    public string? MaDonHang { get; set; }
+    //    public int Iduser { get; set; }
 
-        public DateTime? NgayDatHang { get; set; }
+    //    public DateTime? NgayDatHang { get; set; }
 
-        public decimal? TongTien { get; set; }
-    }
+    //    public decimal? TongTien { get; set; }
+    //}
 
 }

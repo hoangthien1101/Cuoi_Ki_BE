@@ -38,23 +38,19 @@ namespace TNN.Controllers
             var CTHD = _ChiTietHoaDonRepo.AddCTHD(add);
             return Ok(CTHD);
         }
-        [Authorize(Roles = "admin")] // có quyền 
-        [HttpPut("EditCTDH")]
-        public IActionResult EditHoaDon(ChiTietHoaDonMD edit)
-        {
-            var CTHD = _ChiTietHoaDonRepo.EditCTHD(edit);
-            return Ok(CTHD);
+        //[Authorize(Roles = "admin")] // có quyền 
+        //[HttpPut("EditCTDH")]
+        //public IActionResult EditHoaDon(ChiTietHoaDonMD edit)
+        //{
+        //    var CTHD = _ChiTietHoaDonRepo.EditCTHD(edit);
+        //    return Ok(CTHD);
+        //}
+        //[Authorize(Roles = "admin")] // có quyền 
+        //[HttpDelete("DeleteCTHD")]
+        //public IActionResult DeleteCTHD(int IdChiTietDonHang)
+        //{
+        //    var CTHD = _ChiTietHoaDonRepo.DeleteCTHD(IdChiTietDonHang);
+        //    return Ok(CTHD);
         }
-        [Authorize(Roles = "admin")] // có quyền 
-        [HttpDelete("DeleteCTHD")]
-        public IActionResult DeleteCTHD(int IdChiTietDonHang)
-        {
-            var CTHD = _ChiTietHoaDonRepo.DeleteCTHD(IdChiTietDonHang);
-            return Ok(CTHD);
-        }
-
-
-
-
     }
-}
+

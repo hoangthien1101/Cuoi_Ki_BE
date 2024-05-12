@@ -10,8 +10,8 @@ namespace TNN.Service
     {
         List<ChiTietHoaDonMD> GetAll();
         IActionResult AddCTHD(AddCTHD add);
-        IActionResult EditCTHD(ChiTietHoaDonMD edit);
-        IActionResult DeleteCTHD(int idChiTietDonHang);
+        //IActionResult EditCTHD(ChiTietHoaDonMD edit);
+        //IActionResult DeleteCTHD(int idChiTietDonHang);
     }
 
     public class ChiTietHoaDonRepo : IChiTietHoaDonRepo
@@ -94,57 +94,57 @@ namespace TNN.Service
 
 
 
-        public IActionResult EditCTHD(ChiTietHoaDonMD edit)
-        {
-            var check = _context.ChiTietHoaDons.FirstOrDefault(a => a.IdchiTietDonHang == edit.IdchiTietDonHang);
-            if (check == null)
-            {
-                return new JsonResult("Không tìm thấy")
-                {
-                    StatusCode = StatusCodes.Status404NotFound
-                };
-            }
-            else
-            {
-                check.IddonHang = edit.IdchiTietDonHang;
-                check.IdsanPham = edit.IdsanPham;
-                check.SoLuong = edit.SoLuong;
-                check.ThanhTien = edit.ThanhTien;
-                _context.SaveChanges();
+        //public IActionResult EditCTHD(ChiTietHoaDonMD edit)
+        //{
+        //    var check = _context.ChiTietHoaDons.FirstOrDefault(a => a.IdchiTietDonHang == edit.IdchiTietDonHang);
+        //    if (check == null)
+        //    {
+        //        return new JsonResult("Không tìm thấy")
+        //        {
+        //            StatusCode = StatusCodes.Status404NotFound
+        //        };
+        //    }
+        //    else
+        //    {
+        //        check.IddonHang = edit.IdchiTietDonHang;
+        //        check.IdsanPham = edit.IdsanPham;
+        //        check.SoLuong = edit.SoLuong;
+        //        check.ThanhTien = edit.ThanhTien;
+        //        _context.SaveChanges();
 
-                return new JsonResult("Sửa Thành công ")
-                {
-                    StatusCode = StatusCodes.Status200OK
-                };
+        //        return new JsonResult("Sửa Thành công ")
+        //        {
+        //            StatusCode = StatusCodes.Status200OK
+        //        };
 
-            }
-
-
-        }
+        //    }
 
 
-        public IActionResult DeleteCTHD(int idChiTietDonHang)
-        {
-            var idctdh = _context.ChiTietHoaDons.SingleOrDefault(l => l.IdchiTietDonHang == idChiTietDonHang);
-            if (idctdh == null)
-            {
-                return new JsonResult("Không có tài khoản cần xóa")
-                {
-                    StatusCode = StatusCodes.Status404NotFound
-                };
-            }
-            else
-            {
-                _context.ChiTietHoaDons.Remove(idctdh);
-                _context.SaveChanges();
+        //}
 
-                return new JsonResult("Đã xóa")
-                {
-                    StatusCode = StatusCodes.Status200OK
-                };
-            }
+
+        //public IActionResult DeleteCTHD(int idChiTietDonHang)
+        //{
+        //    var idctdh = _context.ChiTietHoaDons.SingleOrDefault(l => l.IdchiTietDonHang == idChiTietDonHang);
+        //    if (idctdh == null)
+        //    {
+        //        return new JsonResult("Không có tài khoản cần xóa")
+        //        {
+        //            StatusCode = StatusCodes.Status404NotFound
+        //        };
+        //    }
+        //    else
+        //    {
+        //        _context.ChiTietHoaDons.Remove(idctdh);
+        //        _context.SaveChanges();
+
+        //        return new JsonResult("Đã xóa")
+        //        {
+        //            StatusCode = StatusCodes.Status200OK
+        //        };
+        //    }
 
         }
 
     }
-}
+

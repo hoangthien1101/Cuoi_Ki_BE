@@ -39,17 +39,17 @@ namespace TNN.ViewModel
         public int? IddonNhap { get; set; }
     }
 
-    public class editChiTietDonNhap
-    {
+    //public class editChiTietDonNhap
+    //{
 
-        public int? IdsanPham { get; set; }
+    //    public int? IdsanPham { get; set; }
 
-        public int? SoLuong { get; set; }
+    //    public int? SoLuong { get; set; }
 
-        public double? DonGia { get; set; }
+    //    public double? DonGia { get; set; }
 
-        public double? ThanhTien { get; set; }
+    //    public double? ThanhTien { get; set; }
 
-        public int? IddonNhap { get; set; }
-    }
+    //    public int? IddonNhap { get; set; }
+    //}
 }

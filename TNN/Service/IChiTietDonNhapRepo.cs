@@ -52,54 +52,54 @@ namespace TNN.Service
             }
         }
 
-        public JsonResult DeleteChiTietDonNhap(int IdChitietdonnhap)
-        {
-            var ChiTietDonNhaps = _context.ChiTietDonNhaps.SingleOrDefault(l => l.IdchiTietDonNhap == IdChitietdonnhap);
-            if (ChiTietDonNhaps == null)
-            {
-                return new JsonResult("Không có chi tiết đơn nhập để xóa ")
-                {
-                    StatusCode = StatusCodes.Status404NotFound
+        //public JsonResult DeleteChiTietDonNhap(int IdChitietdonnhap)
+        //{
+        //    var ChiTietDonNhaps = _context.ChiTietDonNhaps.SingleOrDefault(l => l.IdchiTietDonNhap == IdChitietdonnhap);
+        //    if (ChiTietDonNhaps == null)
+        //    {
+        //        return new JsonResult("Không có chi tiết đơn nhập để xóa ")
+        //        {
+        //            StatusCode = StatusCodes.Status404NotFound
 
-                };
-            }
-            else
-            {
-                _context.ChiTietDonNhaps.Remove(ChiTietDonNhaps);
-                _context.SaveChanges();
+        //        };
+        //    }
+        //    else
+        //    {
+        //        _context.ChiTietDonNhaps.Remove(ChiTietDonNhaps);
+        //        _context.SaveChanges();
 
-                return new JsonResult("Đã xóa")
-                {
-                    StatusCode = StatusCodes.Status200OK
-                };
-            };
-        }
+        //        return new JsonResult("Đã xóa")
+        //        {
+        //            StatusCode = StatusCodes.Status200OK
+        //        };
+        //    };
+        //}
 
-        public JsonResult EditChiTietDonNhap(int IdChitietdonnhap, editChiTietDonNhap edit)
-        {
-            var ChiTietDonNhaps = _context.ChiTietDonNhaps.SingleOrDefault(l => l.IdchiTietDonNhap == IdChitietdonnhap);
-            {
+        //public JsonResult EditChiTietDonNhap(int IdChitietdonnhap, editChiTietDonNhap edit)
+        //{
+        //    var ChiTietDonNhaps = _context.ChiTietDonNhaps.SingleOrDefault(l => l.IdchiTietDonNhap == IdChitietdonnhap);
+        //    {
 
-                if (ChiTietDonNhaps == null)
+        //        if (ChiTietDonNhaps == null)
 
-                    return new JsonResult("Không tìm thấy chi tiết đơn nhập để sửa")
-                    {
-                        StatusCode = StatusCodes.Status404NotFound
-                    };
-                else
-                {
+        //            return new JsonResult("Không tìm thấy chi tiết đơn nhập để sửa")
+        //            {
+        //                StatusCode = StatusCodes.Status404NotFound
+        //            };
+        //        else
+        //        {
 
-                    ChiTietDonNhaps.IdsanPham = edit.IdsanPham;
+        //            ChiTietDonNhaps.IdsanPham = edit.IdsanPham;
 
 
-                    _context.SaveChanges();
-                    return new JsonResult(" Đã chinh sua ")
-                    {
-                        StatusCode = StatusCodes.Status200OK
-                    };
-                }
-            }
-        }
+        //            _context.SaveChanges();
+        //            return new JsonResult(" Đã chinh sua ")
+        //            {
+        //                StatusCode = StatusCodes.Status200OK
+        //            };
+        //        }
+        //    }
+        //}
 
         public List<ChiTietDonNhapMD> GetAll()
         {

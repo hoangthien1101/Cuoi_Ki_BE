@@ -39,19 +39,19 @@ namespace TNN.Controllers
             var DonNhaps = _DonNhapRepo.AddDonNhap(addDonNhap);
             return Ok(DonNhaps);
         }
-        [Authorize(Roles = "admin,Nhan Vien")] // có quyền 
-        [HttpPut("Edit")]
-        public IActionResult DonNhap(int iddonnhap, EditDonNhap edit)
-        {
+        //[Authorize(Roles = "admin,Nhan Vien")] // có quyền 
+        //[HttpPut("Edit")]
+        //public IActionResult DonNhap(int iddonnhap, EditDonNhap edit)
+        //{
 
-            return Ok(_DonNhapRepo.EditDonNhap(iddonnhap,edit));
+        //    return Ok(_DonNhapRepo.EditDonNhap(iddonnhap,edit));
 
-        }
-        [Authorize(Roles = "admin,Nhan Vien")] // có quyền 
-        [HttpDelete("Delete")]
-        public IActionResult DeleteDonNhap(int idDonNhap)
-        {
-            return Ok(_DonNhapRepo.DeleteDonNhap(idDonNhap));
-        }
+        //}
+        //[Authorize(Roles = "admin,Nhan Vien")] // có quyền 
+        //[HttpDelete("Delete")]
+        //public IActionResult DeleteDonNhap(int idDonNhap)
+        //{
+        //    return Ok(_DonNhapRepo.DeleteDonNhap(idDonNhap));
+        //}
     }
 }

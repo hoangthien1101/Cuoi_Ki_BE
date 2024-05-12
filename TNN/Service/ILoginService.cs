@@ -17,14 +17,14 @@ namespace TNN.Service
         private readonly CuaHangDienLanhContext _context;
         private readonly IConfiguration _config;
         private readonly IUserRepo _userServices;
-        private readonly ITokenServices _tokenStorage;
+        //private readonly ITokenServices _tokenStorage;
 
-        public LoginServices(IUserRepo userServices, IConfiguration config, ITokenServices tokenStorage, CuaHangDienLanhContext context)
+        public LoginServices(IUserRepo userServices, IConfiguration config,  CuaHangDienLanhContext context)
         {
             _context = context;
             _config = config;
             _userServices = userServices;
-            _tokenStorage = tokenStorage;
+            
         }
 
         public JsonResult Login(string username, string matkhau)

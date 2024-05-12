@@ -26,7 +26,6 @@ namespace TNN.Service
         {
             try
             {
-
                 var ChiTietGioHang = new ChiTietGioHang
                 {
                     IdgioHang = addChiTietGioHang.IdgioHang,
@@ -41,14 +40,12 @@ namespace TNN.Service
                     StatusCode = StatusCodes.Status200OK
                 };
             }
-
             catch (Exception ex)
             {
                 {
                     return new JsonResult(" Đã tồn tại")
                     {
                         StatusCode = StatusCodes.Status500InternalServerError
-
                     };
                 }
             }

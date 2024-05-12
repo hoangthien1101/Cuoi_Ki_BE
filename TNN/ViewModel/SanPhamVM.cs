@@ -64,7 +64,6 @@ namespace TNN.ViewModel
 
     public class EditSanPham
     {
-        public int IdsanPham { get; set; }
         public string MaSp { get; set; } = null!;
 
         public string TenSp { get; set; } = null!;

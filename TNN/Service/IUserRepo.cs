@@ -38,6 +38,7 @@ namespace TNN.Service
             var user = _context.Users.Select(u => new UserMD
             {
                 Iduser = u.Iduser,
+                UserName = u.UserName,
                 Ho = u.Ho,
                 Ten = u.Ten,
                 Idloai = u.Idloai,
@@ -180,6 +181,12 @@ namespace TNN.Service
             }
             else
             {
+                var img = _context.HinhAnhUsers.Where(i => i.Iduser == idUser).ToList();
+                // Xóa từng hình ảnh
+                foreach (var image in img)
+                {
+                    _context.HinhAnhUsers.Remove(image);
+                }
                 _context.Users.Remove(user);
                 _context.SaveChanges();
 
@@ -195,7 +202,6 @@ namespace TNN.Service
             var check = _context.Users.FirstOrDefault(c => c.UserName == username);
             if(check != null)
             {
-
                 check.Ho = edituser.Ho;
                 check.Ten = edituser.Ten;
                 check.Email = edituser.Email;

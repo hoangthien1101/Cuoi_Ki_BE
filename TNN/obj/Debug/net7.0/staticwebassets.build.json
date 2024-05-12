@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mD2nWvD6npE6KsaFdraIusUGBrrRDJqkQs4le+hLT2I=",
+  "Hash": "s1qeR8IWmuAMHzuXcS0XsW+FUtXigzjkah94sqqrj50=",
   "Source": "TNN",
   "BasePath": "_content/TNN",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TNN\\wwwroot",
       "Source": "TNN",
-      "ContentRoot": "D:\\WorkSpace\\Vs\\BACK-END CUOI KI\\TNN\\TNN\\wwwroot\\",
+      "ContentRoot": "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\wwwroot\\",
       "BasePath": "_content/TNN",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\WorkSpace\\Vs\\BACK-END CUOI KI\\TNN\\TNN\\wwwroot\\Users\\ab193614-6cb2-486f-8d14-5e79de37c96b_1.png",
+      "Identity": "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\wwwroot\\Users\\ab193614-6cb2-486f-8d14-5e79de37c96b_1.png",
       "SourceId": "TNN",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WorkSpace\\Vs\\BACK-END CUOI KI\\TNN\\TNN\\wwwroot\\",
+      "ContentRoot": "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\wwwroot\\",
       "BasePath": "_content/TNN",
       "RelativePath": "Users/ab193614-6cb2-486f-8d14-5e79de37c96b_1.png",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\Users\\ab193614-6cb2-486f-8d14-5e79de37c96b_1.png"
     },
     {
-      "Identity": "D:\\WorkSpace\\Vs\\BACK-END CUOI KI\\TNN\\TNN\\wwwroot\\Users\\d838318b-c578-46f4-9d8c-c518b012b8f3_Screenshot 2024-03-19 084804.png",
+      "Identity": "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\wwwroot\\Users\\d838318b-c578-46f4-9d8c-c518b012b8f3_Screenshot 2024-03-19 084804.png",
       "SourceId": "TNN",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WorkSpace\\Vs\\BACK-END CUOI KI\\TNN\\TNN\\wwwroot\\",
+      "ContentRoot": "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\wwwroot\\",
       "BasePath": "_content/TNN",
       "RelativePath": "Users/d838318b-c578-46f4-9d8c-c518b012b8f3_Screenshot 2024-03-19 084804.png",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\Users\\d838318b-c578-46f4-9d8c-c518b012b8f3_Screenshot 2024-03-19 084804.png"
     },
     {
-      "Identity": "D:\\WorkSpace\\Vs\\BACK-END CUOI KI\\TNN\\TNN\\wwwroot\\Users\\fdf6c8cf-ac40-4c7a-adb2-7ed736172a95_1.png",
+      "Identity": "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\wwwroot\\Users\\fdf6c8cf-ac40-4c7a-adb2-7ed736172a95_1.png",
       "SourceId": "TNN",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WorkSpace\\Vs\\BACK-END CUOI KI\\TNN\\TNN\\wwwroot\\",
+      "ContentRoot": "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\wwwroot\\",
       "BasePath": "_content/TNN",
       "RelativePath": "Users/fdf6c8cf-ac40-4c7a-adb2-7ed736172a95_1.png",
       "AssetKind": "All",

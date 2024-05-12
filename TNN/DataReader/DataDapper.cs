@@ -40,7 +40,6 @@ namespace TNN.DataReader
             try
             {
                 conn.Open();
-
                 return conn.Query<T>(sql, paras, commandType: CommandType.StoredProcedure);
             }
             catch (Exception ex)

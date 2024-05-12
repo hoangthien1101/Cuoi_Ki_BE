@@ -50,9 +50,9 @@ namespace TNN.Controllers
         }
         [Authorize(Roles = "admin,Nhan Vien")] // có quyền 
         [HttpPut("EditSanPham")]
-        public IActionResult EditSanPham(EditSanPham edit)
+        public IActionResult EditSanPham(int idsanpham, EditSanPham edit)
         {
-            return Ok(_sanPhamRepo.EditSanPham(edit));
+            return Ok(_sanPhamRepo.EditSanPham(idsanpham,edit));
 
         }
 

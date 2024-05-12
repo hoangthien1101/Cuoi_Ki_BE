@@ -13,7 +13,7 @@ namespace TNN.Service
         SanPhamMD GetByID(int idSanPham);
         JsonResult AddSanPham(AddSP add);
         IActionResult DeleteByID(int IdSanPham);
-        JsonResult EditSanPham(EditSanPham edit);
+        JsonResult EditSanPham(int idsanpham, EditSanPham edit);
     }
     public class SanPhamRepo : ISanPhamRepo
     {
@@ -93,11 +93,11 @@ namespace TNN.Service
         }
 
 
-        public JsonResult EditSanPham(EditSanPham edit)
+        public JsonResult EditSanPham(int idsanpham,EditSanPham edit)
         {
             var para = new
             {
-                IDSanPham = edit.IdsanPham,
+                IDSanPham = idsanpham,
                 MaSp = edit.MaSp,
                 TenSp = edit.TenSp,
                 IdloaiSp = edit.IdloaiSp,
@@ -113,7 +113,7 @@ namespace TNN.Service
             try
             {
                 var affectedRows = _data.Execute(sql, para);
-                if (affectedRows == 1)
+                if (affectedRows > 0)
                 {
                     return new JsonResult("Đã Sửa")
                     {
@@ -156,7 +156,7 @@ namespace TNN.Service
             try
             {
                 var affectedRows = _data.Execute(sql, para);
-                if (affectedRows >01)
+                if (affectedRows >0)
                 {
                     return new JsonResult("Đã Thêm")
                     {

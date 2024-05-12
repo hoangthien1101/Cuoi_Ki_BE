@@ -25,12 +25,14 @@ namespace TNN.Service
         private readonly IUpLoadHinhAnhRepo _upLoadHinhAnhRepo;
         private readonly CuaHangDienLanhContext _context;
         private readonly ISendMailService _sendEmail;
-        public UserRepo( CuaHangDienLanhContext context, ISendMailService sendEmail, IWriteFileRepository writeFile, IUpLoadHinhAnhRepo upLoadHinhAnhRepo) 
+        private readonly IGioHangRepo _giohangRepo;
+        public UserRepo( CuaHangDienLanhContext context, ISendMailService sendEmail, IWriteFileRepository writeFile, IUpLoadHinhAnhRepo upLoadHinhAnhRepo, IGioHangRepo giohangRepo) 
         {
             _context = context;
             _sendEmail = sendEmail;
             _writeFile = writeFile;
             _upLoadHinhAnhRepo = upLoadHinhAnhRepo;
+            _giohangRepo = giohangRepo;
         }
 
         public List<UserMD> GetAll()
@@ -76,6 +78,20 @@ namespace TNN.Service
             }
             return null;
         }
+
+        private void taogiohang(int iduser,string magiohang, decimal tongtine)
+        {
+            var giohang = new GioHang
+            {
+                IdkhachHang = iduser,
+                MaGioHang = magiohang,
+                TongTien = tongtine,
+            };
+            _context.GioHangs.Add(giohang);
+            _context.SaveChanges();
+        }
+
+
         public async Task<JsonResult> AddUser(AddUser userVM, List<IFormFile> files)
         {
             if (CheckUser(userVM.Username) == null)
@@ -91,7 +107,7 @@ namespace TNN.Service
                     Ten = userVM.Ten,
                     NgayTao = DateTime.Now,
                     Idloai = userVM.IdLoai,
-                };
+                };               
                 _context.Users.Add(user);
                 _context.SaveChanges();
 
@@ -112,6 +128,12 @@ namespace TNN.Service
                     }
                     _context.SaveChanges();
                 }
+
+                int IDUser = user.Iduser;
+                string magiohang = "GH" + IDUser;
+                decimal tongtien = 0;
+                taogiohang(IDUser, magiohang, tongtien);
+
                 var email = new EmailModel
                 {
                     FromEmail = "hoangthien110104@gmail.com",
@@ -270,6 +292,10 @@ namespace TNN.Service
                     };
                     _context.Users.Add(user);
                     _context.SaveChanges();
+                    int IDUser = user.Iduser;
+                    string magiohang = "GH" + IDUser;
+                    decimal tongtien = 0;
+                    taogiohang(IDUser, magiohang, tongtien);
                 }
                 else
                 {

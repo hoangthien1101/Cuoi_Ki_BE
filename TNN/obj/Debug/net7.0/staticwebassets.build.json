@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "s1qeR8IWmuAMHzuXcS0XsW+FUtXigzjkah94sqqrj50=",
+  "Hash": "up8WkiM3rbpyEwrp+6aeok1vwAy1+rJF2tFsxbNyVF0=",
   "Source": "TNN",
   "BasePath": "_content/TNN",
   "Mode": "Default",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\wwwroot\\Users\\1b914eec-e702-484b-a9f0-47b577d96920_Screenshot 2024-03-20 102543.png",
+      "SourceId": "TNN",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\wwwroot\\",
+      "BasePath": "_content/TNN",
+      "RelativePath": "Users/1b914eec-e702-484b-a9f0-47b577d96920_Screenshot 2024-03-20 102543.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Users\\1b914eec-e702-484b-a9f0-47b577d96920_Screenshot 2024-03-20 102543.png"
+    },
+    {
+      "Identity": "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\wwwroot\\Users\\674adbb6-ec61-4ccb-8f1c-051c71cc97cc_Screenshot 2024-03-20 000317.png",
+      "SourceId": "TNN",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\wwwroot\\",
+      "BasePath": "_content/TNN",
+      "RelativePath": "Users/674adbb6-ec61-4ccb-8f1c-051c71cc97cc_Screenshot 2024-03-20 000317.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Users\\674adbb6-ec61-4ccb-8f1c-051c71cc97cc_Screenshot 2024-03-20 000317.png"
+    },
     {
       "Identity": "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\wwwroot\\Users\\ab193614-6cb2-486f-8d14-5e79de37c96b_1.png",
       "SourceId": "TNN",

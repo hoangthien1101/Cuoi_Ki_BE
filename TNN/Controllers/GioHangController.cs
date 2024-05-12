@@ -33,13 +33,13 @@ namespace TNN.Controllers
             return Ok(giohangs);
         }
 
-        [Authorize(Roles = "admin")] // có quyền 
-        [HttpPost("AddGioHang")]
-        public IActionResult AddGioHang(AddGioHang giohangVM)
-        {
-            var giohangs = _giohangRepo.AddGioHang(giohangVM);
-            return Ok(giohangs);
-        }
+        //[Authorize(Roles = "admin")] // có quyền 
+        //[HttpPost("AddGioHang")]
+        //public IActionResult AddGioHang(AddGioHang giohangVM)
+        //{
+        //    var giohangs = _giohangRepo.AddGioHang(giohangVM);
+        //    return Ok(giohangs);
+        //}
         
         [HttpPut("EditGioHang ")]
         public IActionResult EditGioHang(int idgiohang, EditGioHang edit)

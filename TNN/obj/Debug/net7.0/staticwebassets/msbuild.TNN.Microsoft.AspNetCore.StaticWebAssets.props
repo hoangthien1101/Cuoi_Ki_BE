@@ -1,5 +1,37 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Users\1b914eec-e702-484b-a9f0-47b577d96920_Screenshot 2024-03-20 102543.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>TNN</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TNN</BasePath>
+      <RelativePath>Users/1b914eec-e702-484b-a9f0-47b577d96920_Screenshot 2024-03-20 102543.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Users\1b914eec-e702-484b-a9f0-47b577d96920_Screenshot 2024-03-20 102543.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Users\674adbb6-ec61-4ccb-8f1c-051c71cc97cc_Screenshot 2024-03-20 000317.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>TNN</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TNN</BasePath>
+      <RelativePath>Users/674adbb6-ec61-4ccb-8f1c-051c71cc97cc_Screenshot 2024-03-20 000317.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Users\674adbb6-ec61-4ccb-8f1c-051c71cc97cc_Screenshot 2024-03-20 000317.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Users\ab193614-6cb2-486f-8d14-5e79de37c96b_1.png))">
       <SourceType>Package</SourceType>
       <SourceId>TNN</SourceId>

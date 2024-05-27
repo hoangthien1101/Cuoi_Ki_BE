@@ -24,10 +24,11 @@ namespace TNN.Controllers
             return Ok(_loginServices.Login(username, matkhau));
         }
         [HttpPost("Đăng kí tài khoản")]
-        public IActionResult RegisterUser([FromForm]RegisterUser registerUser)
+        public async Task<JsonResult> RegisterUser([FromForm] RegisterUser registerUser, List<IFormFile> files)
         {
-            return Ok(_userRepo.RegisterUser(registerUser));
+            var result = await _userRepo.RegisterUser(registerUser, files);
+            return result;
+        }
     }
-    }
-    
+
 }

@@ -33,7 +33,7 @@ namespace TNN.Controllers
         public IActionResult Addhang(AddHang addHang)
         {
             return Ok(_hangRepo.Addhang(addHang));
-        }
+        }   
         [Authorize(Roles = "admin,Nhan Vien")] // có quyền 
         [HttpPut("Edit Hãng")]
         public IActionResult Edit(int idhang , AddHang addHang)

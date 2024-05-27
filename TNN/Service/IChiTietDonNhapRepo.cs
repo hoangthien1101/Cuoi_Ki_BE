@@ -8,8 +8,8 @@ namespace TNN.Service
     {
         List<ChiTietDonNhapMD> GetAll();
         JsonResult AddChiTietDonNhap(addChiTietDonNhap Add);
-        JsonResult EditChiTietDonNhap(int IdChitietdonnhap, editChiTietDonNhap edit);
-        JsonResult DeleteChiTietDonNhap(int IdChitietdonnhap);
+        //JsonResult EditChiTietDonNhap(int IdChitietdonnhap, editChiTietDonNhap edit);
+        //JsonResult DeleteChiTietDonNhap(int IdChitietdonnhap);
         ChiTietDonNhapVM GetById(int idChitietdonnhap);
     }
     public class ChiTietDonNhapRepo : IChiTietDonNhapRepo

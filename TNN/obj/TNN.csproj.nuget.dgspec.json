@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\TNN.csproj": {}
+    "D:\\WorkSpace\\Vs\\BACK-END TNN\\TNN\\TNN\\TNN.csproj": {}
   },
   "projects": {
-    "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\TNN.csproj": {
+    "D:\\WorkSpace\\Vs\\BACK-END TNN\\TNN\\TNN\\TNN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\TNN.csproj",
+        "projectUniqueName": "D:\\WorkSpace\\Vs\\BACK-END TNN\\TNN\\TNN\\TNN.csproj",
         "projectName": "TNN",
-        "projectPath": "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\TNN.csproj",
+        "projectPath": "D:\\WorkSpace\\Vs\\BACK-END TNN\\TNN\\TNN\\TNN.csproj",
         "packagesPath": "C:\\Users\\phamh\\.nuget\\packages\\",
-        "outputPath": "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\obj\\",
+        "outputPath": "D:\\WorkSpace\\Vs\\BACK-END TNN\\TNN\\TNN\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\phamh\\AppData\\Roaming\\NuGet\\NuGet.Config",

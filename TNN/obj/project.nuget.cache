@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yPkf24ZMcr5nx9LKhqdKfhrGoM8F/RkzaIW6I1kasHw/9yJmmJ1U0/drDnz0HHPb0tux8rlvnDx3DpLR/F6Y6g==",
+  "dgSpecHash": "P5uiZhCcufqvupUrE8DnzNuoE/KbQJE0jv1ptzy7ueSI04q6jd2oH12V1+lT599UbVlhc2fEDUHxlLf7ZjzFhQ==",
   "success": true,
-  "projectFilePath": "D:\\WorkSpace\\Vs\\BackUp_BE\\TNN\\TNN\\TNN.csproj",
+  "projectFilePath": "D:\\WorkSpace\\Vs\\BACK-END TNN\\TNN\\TNN\\TNN.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\phamh\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\phamh\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

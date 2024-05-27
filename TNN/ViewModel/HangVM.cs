@@ -16,7 +16,6 @@ namespace TNN.ViewModel
 
 
     public class AddHang
-
     {
         public string? TenHang { get; set; }
     }

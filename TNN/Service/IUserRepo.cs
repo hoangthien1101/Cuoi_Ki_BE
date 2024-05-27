@@ -17,7 +17,7 @@ namespace TNN.Service
         JsonResult DeleteUser(int idUser);
         JsonResult EditUser(string username, EditUser edituser);
         bool DoiMatKhau(string username, DoiMatKhauVM doiMatKhauVM);
-        JsonResult RegisterUser(RegisterUser registerUser);
+        Task<JsonResult> RegisterUser(RegisterUser registerUser, List<IFormFile> files);
     }
     public class UserRepo : IUserRepo
     {
@@ -129,10 +129,7 @@ namespace TNN.Service
                     _context.SaveChanges();
                 }
 
-                int IDUser = user.Iduser;
-                string magiohang = "GH" + IDUser;
-                decimal tongtien = 0;
-                taogiohang(IDUser, magiohang, tongtien);
+                
 
                 var email = new EmailModel
                 {
@@ -272,7 +269,7 @@ namespace TNN.Service
             return false;
         }
 
-        public JsonResult RegisterUser(RegisterUser registerUser)
+        public async Task<JsonResult> RegisterUser(RegisterUser registerUser, List<IFormFile> files)
         {
             var check = _context.Users.SingleOrDefault(c => c.UserName == registerUser.Username);
             if (check == null)
@@ -292,6 +289,24 @@ namespace TNN.Service
                     };
                     _context.Users.Add(user);
                     _context.SaveChanges();
+
+                    int IdUser = user.Iduser;
+                    string folder = "Users";
+
+                    List<string> imageUrls = await _writeFile.WriteFileAsync(files, folder);
+                    if (imageUrls.Count != 0)
+                    {
+                        foreach (var url in imageUrls)
+                        {
+                            var image = new HinhAnhUser
+                            {
+                                Iduser = IdUser,
+                                UrlHinhAnh = url
+                            };
+                            _context.HinhAnhUsers.Add(image);
+                        }
+                        _context.SaveChanges();
+                    }
                     int IDUser = user.Iduser;
                     string magiohang = "GH" + IDUser;
                     decimal tongtien = 0;
